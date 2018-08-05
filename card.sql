@@ -18,10 +18,10 @@ SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
--- Table structure for text
+-- Table structure for textMessage
 -- ----------------------------
-DROP TABLE IF EXISTS `text`;
-CREATE TABLE `text`  (
+DROP TABLE IF EXISTS `textMessage`;
+CREATE TABLE `textMessage`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `content` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
