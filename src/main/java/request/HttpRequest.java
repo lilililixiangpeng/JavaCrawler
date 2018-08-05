@@ -12,11 +12,11 @@ import java.util.Map;
 
 public class HttpRequest {
 
-    public static String sendGet(String url, String param) {
+    public static String sendGet(String url) {
         String result = "";
         BufferedReader in = null;
         try {
-            String urlNameString = url + "?" + param;
+            String urlNameString = url;
             URL realUrl = new URL(urlNameString);
             URLConnection connection = realUrl.openConnection();
             connection.setRequestProperty("accept", "*/*");

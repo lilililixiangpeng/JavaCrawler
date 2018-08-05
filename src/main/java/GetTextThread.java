@@ -15,7 +15,7 @@ public class GetTextThread extends Thread{
     }
 
     public void run() {
-        for(int i=page;i<=page+50;i++){
+       /* for(int i=page;i<=page+50;i++){
             String param="p="+i+"&c=&t=";
             String result = HttpRequest.sendGet("https://so.gushiwen.org/mingju/default.aspx", param);
             //String result = HttpRequest.sendPost();
@@ -24,6 +24,6 @@ public class GetTextThread extends Thread{
             for (int j=0;j < elements.size();j+=2){
                 text.put(elements.get(j+1).text(),elements.get(j).text());
             }
-        }
+        }*/
     }
 }
